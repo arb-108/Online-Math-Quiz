@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="main">
+
+    
+    <div class="hide" id="mid_p">
+        <div class="upperdiv">
+            <div class="score">
+                <!-- <h3>Correct Answer = <span id="correct">0</span></h3>
+                <h3>Wrong Answer = <span id="wrong">0</span></h3> -->
+                    <h3 id="count">Question = <span >1</h3>
+            </div>
+            <div class="box">
+                <div class="timer">
+                    <svg viewBox="0 0 150 150">
+                        <circle cx="75" cy="75" r="70" class="lower"></circle> 
+                        <circle cx="75" cy="75" r="70" id="circle_m" class="upper"></circle>
+                    </svg>
+                    <div class="number">
+                        <h2 id="time">60</h2>
+                    </div>
+                </div>
+               
+            </div>
+            
+        </div>
+        <div class="ques">
+            <p>Q.</p>
+            <p id="que">What is <span id="part1" class="qc">5</span> <span id="operator">multiply</span> by <span id="part2" class="qc">5 </span>?</p>
+        </div>
+        <div class="answer">
+            <label for="">Answer</label>
+            <div action="" id="form" class="inputs">
+                <input type="number" id="ans" required>
+                <div class="skip_portion">
+
+                    <button id="skip_btn">Skip</button>
+                    <button id="submit_btn">Submit</button>
+                </div>
+
+            </div>
+        </div>
+        
+        
+    </div>
+    <div class="prephase" id="pre_p">
+        <div class="heading">
+            <p>Math Quiz</p>
+        </div>
+        <div class="info">
+            <p>Each Question =<span> 2 Marks</span></p>
+            <p>Total Time = <span> 60</span> sec</p>
+        </div>
+        <div class="start_btn">
+            <button id="st_btn">Start</button>
+        </div>
+    </div>
+    <div class="hide" id="post_p">
+        <div class="heading">
+            <p>Results</p>
+        </div>
+        <div class="last_score">
+            <p>Score : <span id="percent_r">30</span></p>
+            <span>%</span>
+    
+        </div>
+        <div class="info">
+            <p>Correct Answers =<span id="correct_r"> 10</span></p>
+            <p>Wrong Answers = <span id="wrong_r"> 60</span> </p>
+            <p>Un-Attempted  = <span id="skip_r"> 60</span> </p>
+        </div>
+        <div class="reset_btn">
+            <button id="reset_btn">Reset</button>
+        </div>
+    </div>
+</div>
+    <script src="index.js"></script>
+
+</body>
+</html>
